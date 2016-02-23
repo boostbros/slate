@@ -54,7 +54,7 @@ Kittn expects for the API key to be included in all API requests to the server i
 
 `Authorization: meowmeowmeow`
 
-<aside class="notice">
+<aside class="danger">
 You must replace <code>meowmeowmeow</code> with your personal API key.
 </aside>
 
@@ -81,7 +81,7 @@ curl "http://example.com/api/kittens"
   -H "Authorization: meowmeowmeow"
 ```
 
-> The above command returns JSON structured like this:
+> Response 200:
 
 ```json
 [
@@ -110,10 +110,10 @@ This endpoint retrieves all kittens.
 
 ### Query Parameters
 
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
+Parameter    | Default | Description
+------------ | ------- | -----------
+include_cats | false   | If set to true, the result will also include cats.
+available    | true    | If set to false, the result will include kittens that have already been adopted.
 
 <aside class="success">
 Remember — a happy kitten is an authenticated kitten!
